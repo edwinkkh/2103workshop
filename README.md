@@ -24,3 +24,16 @@ It should show the following
 ```
 pip 19.2.3 from c:\program files\python38\lib\site-packages\pip (python 3.8)
 ```
+
+5. Open index.py. Go to line 47. Update the database credential
+```
+bucketname = 'ICT2103'
+cluster = Cluster('couchbase://localhost')
+authenticator = PasswordAuthenticator('Administrator', 'password')
+```
+
+6. To run the program, Open command prompt and change the directory to the place where you save the repo. Enter the following command
+```
+cd C:\<path-to>\ICT2103Workshop 
+python index.py
+```
