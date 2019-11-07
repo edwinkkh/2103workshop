@@ -53,6 +53,7 @@ selectedRecord = 123456788
 
 #insert records
 insertRecords(bucket)
+#un-comment to retrieve list of records. NOTE: Please create a index before retrieving the record
 #retrieveRecordList(bucket)
 
 #retrieve book details
@@ -68,6 +69,6 @@ retrieveRecordDetails(selectedRecord, bucket)
 deleteRecord(selectedRecord, bucket)
 #retrieveRecordList(bucket)
 
-# remove property
-del bookObj['tags']
-deleteAttributes(selectedRecord, bookObj, bucket)
+# remove property, un-comment to delete property from the obj
+# del bookObj['tags']
+# deleteAttributes(selectedRecord, bookObj, bucket)
